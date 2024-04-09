@@ -35,12 +35,12 @@ function GetApi() {
 
   return (
     <>
-       <h1> Axios Tutorial</h1>
+       <h1>Get Api</h1>
 
        {isError!= "" && <h2>{isError}</h2>}
        <div className="grid">
 
-      {mydata.slice(0,25).map((post)=>{
+      {mydata.slice(0,6).map((post)=>{
         const {id, title, body} = post;
         return <div className='card' key={id}>
           <h2>{title.slice(0,15).toUpperCase()}</h2>
